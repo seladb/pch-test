@@ -9,10 +9,15 @@ def echo(phrase: str) -> None:
     print(phrase)
 
 
+def echo2(phrase: str) -> None:
+    print(f"{phrase} 2")
+
+
 def main() -> int:
     """Echo the input arguments to standard output"""
     phrase = shlex.join(sys.argv)
     echo(phrase)
+    echo2(phrase)
     return 0
 
 
